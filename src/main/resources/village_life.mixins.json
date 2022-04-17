@@ -3,6 +3,7 @@
   "package": "me.fzzyhmstrs.village_life.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "StructurePoolsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
