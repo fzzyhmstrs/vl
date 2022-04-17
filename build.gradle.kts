@@ -11,7 +11,15 @@ val modVersion: String by project
 version = modVersion
 val mavenGroup: String by project
 group = mavenGroup
-repositories {}
+repositories {
+    maven {
+        name = "Modrinth"
+        url = uri("https://api.modrinth.com/maven")
+        content {
+            includeGroup("maven.modrinth")
+        }
+    }
+}
 dependencies {
     val minecraftVersion: String by project
     minecraft("com.mojang:minecraft:$minecraftVersion")
@@ -23,6 +31,11 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:$fabricVersion")
     val fabricKotlinVersion: String by project
     modImplementation("net.fabricmc:fabric-language-kotlin:$fabricKotlinVersion")
+
+    modImplementation("maven.modrinth:Wd844r7Q:1.18.2-02"){
+        exclude("net.fabricmc.fabric-api")
+    }
+    include("maven.modrinth:Wd844r7Q:1.18.2-02")
 }
 tasks {
     val javaVersion = JavaVersion.VERSION_17
