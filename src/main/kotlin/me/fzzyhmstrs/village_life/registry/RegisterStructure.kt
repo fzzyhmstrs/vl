@@ -11,25 +11,25 @@ object RegisterStructure {
     fun registerAll(){
         FabricStructurePoolRegistry.register(
             Identifier("minecraft:village/desert/streets"),
-            Identifier(VL.MOD_ID,"village/desert/streets/market_street_straight_01a"),
+            Identifier(VL.MOD_ID,"village/desert/streets/market_street_straight_01"),
             1,
             StructureProcessorLists.EMPTY,
             StructurePool.Projection.TERRAIN_MATCHING)
         FabricStructurePoolRegistry.register(
             Identifier("minecraft:village/desert/streets"),
-            Identifier(VL.MOD_ID,"village/desert/streets/market_street_bent_01a"),
+            Identifier(VL.MOD_ID,"village/desert/streets/market_street_bent_01"),
             1,
             StructureProcessorLists.EMPTY,
             StructurePool.Projection.TERRAIN_MATCHING)
         FabricStructurePoolRegistry.register(
             Identifier("minecraft:village/desert/streets"),
-            Identifier(VL.MOD_ID,"village/desert/streets/market_street_tee_01a"),
+            Identifier(VL.MOD_ID,"village/desert/streets/market_street_tee_01"),
             1,
             StructureProcessorLists.EMPTY,
             StructurePool.Projection.TERRAIN_MATCHING)
         FabricStructurePoolRegistry.register(
             Identifier("minecraft:village/desert/streets"),
-            Identifier(VL.MOD_ID,"village/desert/streets/market_street_square_01a"),
+            Identifier(VL.MOD_ID,"village/desert/streets/market_street_square_01"),
             1,
             StructureProcessorLists.EMPTY,
             StructurePool.Projection.TERRAIN_MATCHING)
