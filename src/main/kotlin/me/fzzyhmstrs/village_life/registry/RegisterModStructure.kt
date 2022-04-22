@@ -16,6 +16,11 @@ object RegisterModStructure {
                 Identifier(VL.MOD_ID, "village/desert/mod_stalls/crystal_witch_stall_01"),
                 3
             )
+            FabricStructurePoolRegistry.registerSimple(
+                Identifier(VL.MOD_ID+"village/plains/town_hall_towers"),
+                Identifier(VL.MOD_ID, "village/plains/mod_town_hall_towers/town_hall_tower_02"),
+                4
+            )
         }
     }
 

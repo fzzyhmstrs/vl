@@ -33,6 +33,23 @@ object RegisterStructure {
             1,
             StructureProcessorLists.EMPTY,
             StructurePool.Projection.TERRAIN_MATCHING)
+        FabricStructurePoolRegistry.register(
+            Identifier("minecraft:village/plains/town_centers"),
+            Identifier(VL.MOD_ID,"village/plains/town_hall/town_hall_core_01"),
+            50,
+            StructureProcessorLists.MOSSIFY_10_PERCENT)
+        FabricStructurePoolRegistry.register(
+            Identifier("minecraft:village/plains/streets"),
+            Identifier(VL.MOD_ID,"village/plains/streets/square_market_01"),
+            1,
+            StructureProcessorLists.EMPTY,
+            StructurePool.Projection.TERRAIN_MATCHING)
+        FabricStructurePoolRegistry.register(
+            Identifier("minecraft:village/plains/streets"),
+            Identifier(VL.MOD_ID,"village/plains/streets/square_market_02"),
+            1,
+            StructureProcessorLists.EMPTY,
+            StructurePool.Projection.TERRAIN_MATCHING)
     }
 
 }

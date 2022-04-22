@@ -1,22 +1,15 @@
-package me.fzzyhmstrs.village_life.registry
+package me.fzzyhmstrs.village_life.pools
 
 import com.google.common.collect.ImmutableList
+import com.mojang.datafixers.util.Pair
 import me.fzzyhmstrs.village_life.VL
 import net.minecraft.structure.pool.StructurePool
-import net.minecraft.structure.pool.StructurePools
-import net.minecraft.util.Identifier
-import com.mojang.datafixers.util.Pair
-import me.fzzyhmstrs.village_life.pools.StructurePoolListDesert
-import me.fzzyhmstrs.village_life.pools.StructurePoolListPlains
 import net.minecraft.structure.pool.StructurePoolElement
-import net.minecraft.util.registry.BuiltinRegistries
 import java.util.function.Function
 
-object RegisterStructurePool {
+object StructurePoolListDesert {
 
-    var haveNotRegistered: Boolean = true
-
-    private val DESERT_STREET_DECOR: List<Pair<Function<StructurePool.Projection,out StructurePoolElement>, Int>> =
+    val DESERT_STREET_DECOR: List<Pair<Function<StructurePool.Projection, out StructurePoolElement>, Int>> =
         ImmutableList.of(
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/street_decor/market_street_umbrella_01"),1),
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/street_decor/market_street_umbrella_02"),1),
@@ -36,7 +29,7 @@ object RegisterStructurePool {
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/street_decor/market_street_grate_03"),1),
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/street_decor/market_street_grate_04"),2)
         )
-    private val DESERT_STALLS: List<Pair<Function<StructurePool.Projection,out StructurePoolElement>, Int>> =
+    val DESERT_STALLS: List<Pair<Function<StructurePool.Projection, out StructurePoolElement>, Int>> =
         ImmutableList.of(
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/stalls/alley_01"),1),
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/stalls/alley_02"),1),
@@ -65,70 +58,4 @@ object RegisterStructurePool {
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/stalls/weaponsmith_stall_01"),2),
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/desert/stalls/weaponsmith_stall_02"),1)
         )
-
-
-
-    fun registerAll(){
-        if (haveNotRegistered) {
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/desert/street_decor"),
-                    Identifier("empty"),
-                    StructurePoolListDesert.DESERT_STREET_DECOR,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/desert/stalls"),
-                    Identifier("empty"),
-                    StructurePoolListDesert.DESERT_STALLS,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/town_hall_towers"),
-                    Identifier("empty"),
-                    StructurePoolListPlains.PLAINS_TOWN_HALL_TOWERS,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/town_hall_rooms"),
-                    Identifier("empty"),
-                    StructurePoolListPlains.PLAINS_TOWN_HALL_ROOMS,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/town_hall_halls"),
-                    Identifier("empty"),
-                    StructurePoolListPlains.PLAINS_TOWN_HALL_HALLS,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/town_hall_squares"),
-                    Identifier("empty"),
-                    StructurePoolListPlains.PLAINS_TOWN_HALL_SQUARES,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            StructurePools.register(
-                StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/square_stalls"),
-                    Identifier("empty"),
-                    StructurePoolListPlains.PLAINS_SQUARE_STALLS,
-                    StructurePool.Projection.RIGID
-                )
-            )
-            println()
-            haveNotRegistered = false
-        }
-    }
-
 }
