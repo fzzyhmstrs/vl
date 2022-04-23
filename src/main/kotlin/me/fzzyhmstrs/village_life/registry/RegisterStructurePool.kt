@@ -126,7 +126,22 @@ object RegisterStructurePool {
                     StructurePool.Projection.RIGID
                 )
             )
-            println()
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/houses/plains_house_pieces"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_PIECES,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/houses/plains_house_pieces_right"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_PIECES_RIGHT,
+                    StructurePool.Projection.RIGID
+                )
+            )
             haveNotRegistered = false
         }
     }

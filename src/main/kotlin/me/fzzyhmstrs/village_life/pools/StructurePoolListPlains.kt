@@ -67,4 +67,13 @@ object StructurePoolListPlains {
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/plains/square_decor/square_decor_04"),4),
             Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/plains/square_decor/square_decor_05"),4)
         )
+
+    val PLAINS_HOUSE_PIECES: List<Pair<Function<StructurePool.Projection, out StructurePoolElement>, Int>> =
+        ImmutableList.of(
+            Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/plains/houses/plains_house_pieces/wall_01"),4)
+        )
+    val PLAINS_HOUSE_PIECES_RIGHT: List<Pair<Function<StructurePool.Projection, out StructurePoolElement>, Int>> =
+        ImmutableList.of(
+            Pair.of(StructurePoolElement.ofLegacySingle(VL.MOD_ID+":village/plains/houses/plains_house_pieces/wall_01"),4)
+        )
 }
