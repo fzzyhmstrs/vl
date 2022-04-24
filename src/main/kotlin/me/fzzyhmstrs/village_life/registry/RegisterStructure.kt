@@ -50,6 +50,26 @@ object RegisterStructure {
             1,
             StructureProcessorLists.EMPTY,
             StructurePool.Projection.TERRAIN_MATCHING)
+        FabricStructurePoolRegistry.registerSimple(
+            Identifier("minecraft:village/plains/houses"),
+            Identifier(VL.MOD_ID,"village/plains/house_bases/house_base_2_way"),
+            10)
+        FabricStructurePoolRegistry.registerSimple(
+            Identifier("minecraft:village/plains/houses"),
+            Identifier(VL.MOD_ID,"village/plains/house_bases/house_base_3_way"),
+            10)
+        FabricStructurePoolRegistry.registerSimple(
+            Identifier("minecraft:village/plains/houses"),
+            Identifier(VL.MOD_ID,"village/plains/house_bases/house_base_left"),
+            10)
+        FabricStructurePoolRegistry.registerSimple(
+            Identifier("minecraft:village/plains/houses"),
+            Identifier(VL.MOD_ID,"village/plains/house_bases/house_base_right"),
+            10)
+        FabricStructurePoolRegistry.registerSimple(
+            Identifier("minecraft:village/plains/houses"),
+            Identifier(VL.MOD_ID,"village/plains/house_bases/house_base_back"),
+            10)
     }
 
 }

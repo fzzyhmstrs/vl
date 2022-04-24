@@ -128,7 +128,63 @@ object RegisterStructurePool {
             )
             StructurePools.register(
                 StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/houses/plains_house_pieces"),
+                    Identifier(VL.MOD_ID, "village/plains/square_stalls_small"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_SQUARE_STALLS_SMALL,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/square_decor"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_SQUARE_DECOR,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/house_cores_2"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_CORES_2,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/house_cores_3"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_CORES_3,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/house_cores_back"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_CORES_BACK,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/house_cores_left"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_CORES_LEFT,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/house_cores_right"),
+                    Identifier("empty"),
+                    StructurePoolListPlains.PLAINS_HOUSE_CORES_RIGHT,
+                    StructurePool.Projection.RIGID
+                )
+            )
+            StructurePools.register(
+                StructurePool(
+                    Identifier(VL.MOD_ID, "village/plains/house_pieces"),
                     Identifier("empty"),
                     StructurePoolListPlains.PLAINS_HOUSE_PIECES,
                     StructurePool.Projection.RIGID
@@ -136,7 +192,7 @@ object RegisterStructurePool {
             )
             StructurePools.register(
                 StructurePool(
-                    Identifier(VL.MOD_ID, "village/plains/houses/plains_house_pieces_right"),
+                    Identifier(VL.MOD_ID, "village/plains/house_pieces_right"),
                     Identifier("empty"),
                     StructurePoolListPlains.PLAINS_HOUSE_PIECES_RIGHT,
                     StructurePool.Projection.RIGID
